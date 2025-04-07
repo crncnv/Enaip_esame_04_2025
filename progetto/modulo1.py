@@ -1,7 +1,7 @@
 def funzione_doppio(x):
     """Questa funzione restituisce il doppio del argomento passato alla funzione"""
     # TODO: Implementare la funzione per restituire il doppio di x
-    pass
+    return x*2
 
 def funzione_quadrato(y):
     """
@@ -9,19 +9,22 @@ def funzione_quadrato(y):
     Completa l'implementazione.
     """
     # TODO: Implementare la funzione per restituire il quadrato di y
-    pass
+    return y**2
 
 class ClasseParzialmenteImplementata:
     def __init__(self, nome):
         self.nome = nome
+        self.valore_interno = 13
 
     def metodo_esistente(self):
         return f"Ciao, sono {self.nome}!"
 
-    def metodo_da_completare(self, valore):
+    def metodo_da_completare(self, valore:str):
+        
         """
         Questo metodo dovrebbe aggiungere il 'valore' a un attributo interno
         e restituire il nuovo valore.
         """
         # TODO: Implementare l'aggiunta del valore e la restituzione
-        pass
+        return self.nome + valore
+   

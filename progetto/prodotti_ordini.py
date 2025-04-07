@@ -12,7 +12,7 @@ class Ordine:
         self.cliente = cliente
         self.prodotti = []
 
-    def aggiungi_prodotto(self, prodotto):
+    def aggiungi_prodotto(self, prodotto:type[Prodotto]):
         self.prodotti.append(prodotto)
 
     def calcola_totale(self):
